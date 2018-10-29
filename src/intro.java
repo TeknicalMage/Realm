@@ -7,6 +7,7 @@ public class intro {
 	public double i = 0;
 	public double j = 0;
 	public double k = 0;
+	public double l = 30;
 	public double SMax = 10;
 	
 	public static Player stats = new Player();
@@ -24,7 +25,8 @@ public class intro {
 		String x =input.nextLine();
 		
 		if (x.equals("A")) {
-			new_game();			
+			new_game();
+			System.out.println("Character Setup Complete");
 		}
 		
 		
@@ -35,7 +37,9 @@ public class intro {
 		strength_setup();
 		dexterity_setup();
 		intelligence_setup();
+		stats.setHealth(l + (2 * stats.getStrength()));
 		System.out.println(stats.getStrength()+" Str\n"+ stats.getDexterity()+" Dex\n"+ stats.getIntelligence()+" Int");
+		System.out.println(stats.getHealth());
 		
 	}
 	public void strength_setup() {
