@@ -10,7 +10,7 @@ public class Test {
 	
 	public Test() {
 		
-		System.out.println(r.roll()/10);
+		//System.out.println(r.roll()/10);
 		
 		
 		

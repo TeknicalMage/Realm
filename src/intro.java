@@ -11,9 +11,9 @@ public class intro {
 	public double SMax = 10;
 	
 	public static Player stats = new Player();
+	public static reader rdr = new reader();
 
-	
-	
+		
 	public void main() {
 		String A;
 		String B;
@@ -27,6 +27,9 @@ public class intro {
 		if (x.equals("A")) {
 			new_game();
 			System.out.println("Character Setup Complete");
+		}else if (x.equals("B")) {
+			rdr.main();
+			
 		}
 		
 		
