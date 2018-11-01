@@ -14,7 +14,7 @@ public class reader {
 		
 		 // The name of the file to open.
         String fileName = "C:\\Users\\Julian\\eclipse-workspace-main\\Realm\\src\\temp.txt";
-
+        
         // This will reference one line at a time
         String line = null;
 

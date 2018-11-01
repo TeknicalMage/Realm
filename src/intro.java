@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class intro {
 	public intro() {
-		main();
+		
 	}
 	public double i = 0;
 	public double j = 0;
@@ -12,6 +12,7 @@ public class intro {
 	
 	public static Player stats = new Player();
 	public static reader rdr = new reader();
+	public encounters e = new encounters();
 
 		
 	public void main() {
@@ -20,7 +21,7 @@ public class intro {
 		String C;
 		System.out.println("Type A to Start a new game");
 		System.out.println("Type B to continue a game");
-		System.out.println("Type C to exit");
+		System.out.println("Type C to enter Test Zone");
 		Scanner input = new Scanner(System.in);
 		String x =input.nextLine();
 		
@@ -29,7 +30,8 @@ public class intro {
 			System.out.println("Character Setup Complete");
 		}else if (x.equals("B")) {
 			rdr.main();
-			
+		}else if (x.equals("C")) {
+			e.main();
 		}
 		
 		
