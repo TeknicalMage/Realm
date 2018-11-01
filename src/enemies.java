@@ -7,7 +7,7 @@ public class enemies {
 	public double l = 40.0;
 		
 	public enemies() {
-		main();
+
 	}
 	
 	public void main() {
