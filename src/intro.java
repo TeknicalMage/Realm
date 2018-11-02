@@ -13,6 +13,7 @@ public class intro {
 	public static Player stats = new Player();
 	public static reader rdr = new reader();
 	public encounters e = new encounters();
+	public key_events ke = new key_events();
 
 		
 	public void main() {
@@ -31,8 +32,9 @@ public class intro {
 		}else if (x.equals("B")) {
 			rdr.main();
 		}else if (x.equals("C")) {
-			e.main();
-		}
+			//e.main();
+			//ke.keyPressed();
+			}
 		
 		
 	}

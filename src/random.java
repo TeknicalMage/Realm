@@ -21,6 +21,15 @@ public class random {
 		return value;
 	}
 	
+	public double raw_roll() {
+		Random rnd = new Random();
+		value = (rnd.nextInt(100) + 1);
+		return value;
+	}
+	
+	
+	
+	
 
 	public static void main(String[] args) {
 		new random();

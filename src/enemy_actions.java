@@ -13,18 +13,41 @@ public class enemy_actions {
 	}
 	
 	public void determine_state() {
-		if(pl.getDamage() <= (es.getDamage())){
-			//agro();
-			}
-			
+		r.raw_roll();
+		if(r.getValue() <= 50) {
+			agressive();
+		}else {
+			passive();
 		}
+				
+			}
 	
 	public void agressive () {
-		
+		attack();		
+		for(int i=1; i<0; i++)     
+		{  
+			if(i % 2 ==0) {
+				attack();
+			}else {
+				passive();
+			}
+				
+		}
 	}
+				
 	
 	public void passive() {
 		
 	}
+	
+	public void attack() {
+		pl.setHealth(es.getDamage() - pl.getHealth());
+		System.out.println("(Enemy Name)" + " Attacked for" + es.getDamage());
+		System.out.println("You now have " + pl.getHealth() +"Health");
+	}
+	
+	
+	
+	
 	
 }
