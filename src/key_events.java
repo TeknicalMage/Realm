@@ -6,10 +6,23 @@ public class key_events implements KeyListener{
 
 	
 	public key_events() {
-		
+		setFocusable(true);
+		addKeyListener(this);
 	}
 	
 	
+	private void addKeyListener(key_events key_events) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	private void setFocusable(boolean b) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
 	public static void main(String[] args){
 		
 		//JFrame frame= new JFrame("Jframe");

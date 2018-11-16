@@ -1,6 +1,9 @@
 import java.util.Scanner;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
-public class intro {
+
+public class intro { 
 	public intro() {
 		
 	}
@@ -12,16 +15,18 @@ public class intro {
 	
 	public static Player stats = new Player();
 	public static reader rdr = new reader();
-	public encounters e = new encounters();
-	public key_events ke = new key_events();
-
-		
+	public static enemies en = new enemies();
+	public static event_tree et = new event_tree();
+	//Options for playing	
 	public void main() {
 		String A;
 		String B;
 		String C;
+		//Character Creation + Game
 		System.out.println("Type A to Start a new game");
+		//Pulling stats from a file + game
 		System.out.println("Type B to continue a game");
+		//Various setup for testing of game features
 		System.out.println("Type C to enter Test Zone");
 		Scanner input = new Scanner(System.in);
 		String x =input.nextLine();
@@ -32,13 +37,14 @@ public class intro {
 		}else if (x.equals("B")) {
 			rdr.main();
 		}else if (x.equals("C")) {
-			//e.main();
-			//ke.keyPressed();
+			System.out.println("Base Event Trigger");
+			en.spawn();
+			et.frst.instance();
+				
+
 			}
-		
-		
-	}
-	
+		}
+	//New Game stat setup 
 	public void new_game() {
 		System.out.println("You need to distribute " + SMax + " points among Int, Str, and Dex");
 		strength_setup();
@@ -96,7 +102,5 @@ public class intro {
 
 	public static void main(String[] args) {
 		new intro();
-
 	}
-
 }

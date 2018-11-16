@@ -1,4 +1,4 @@
-
+//Enemy Attack Information
 public class enemy_actions {
 	
 	public static Player pl = new Player();

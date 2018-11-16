@@ -1,3 +1,4 @@
+//Failed Doucment I think
 import java.util.Scanner;
 
 public class encounters {

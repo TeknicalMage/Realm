@@ -24,15 +24,13 @@ public class enemies {
 		//System.out.println(es.getDexterity());
 		
 		r.roll();
-		es.setIntelligence(r.getValue());
-		//System.out.println(es.getIntelligence());
-		
+		es.setIntelligence(r.getValue());		
 		es.setHealth(l + (2 * es.getStrength()));
 		
 		System.out.println("Enemy Spawned");
 		enemy_check();
 	}
-	
+	//Display of Enemy Information
 	public void enemy_check() {
 		System.out.print("Str is " + es.getStrength() + "\n" + "Dex is " + es.getDexterity() + "\n" );
 		System.out.print("Int is " + es.getIntelligence() + "\n" + "Damage is " + es.getDamage() + "\n");
